@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Application</title>
+</head>
+<body>
+    <h1>Email Application</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="to_email">To:</label>
+        <input type="email" name="to_email" required><br>
+        <label for="cc_email">CC (optional):</label>
+        <input type="email" name="cc_email"><br>
+        <label for="subject">Subject:</label>
+        <input type="text" name="subject"><br>
+        <label for="body">Body:</label><br>
+        <textarea name="body" rows="5" cols="40"></textarea><br>
+        <label for="attachment">Attachment:</label>
+        <input type="file" name="attachment"><br>
+        <input type="submit" value="Send Email">
+    </form>
+</body>
+</html>
