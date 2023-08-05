@@ -25,7 +25,7 @@ SECRET_KEY = '@*wmbc#ro2dbl(*wpc_xx*adicp&r^1gk1h%3)-g9g#23+umew'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'mingloktesting@gmail.com'
