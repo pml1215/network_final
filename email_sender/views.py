@@ -58,8 +58,7 @@ def send_email(request):
             except Exception as e:
                 print(f"Failed to send email: {e}")
     else:
-        form = EmailForm()
-    return render(request, 'index.html')
+        return render(request, 'index.html')
 
 
 def email_success(request):
